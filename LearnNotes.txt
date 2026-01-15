@@ -1,0 +1,13 @@
+git is a version control tool.
+This is some early learning notes.
+1. git config --global user.name [用户名]
+   git config --global user.email [邮箱地址]
+   ssh连接
+2. github上新建一个空仓库，本地新建一个文件夹
+   git init
+   git remote add origin https://github.com/你的用户名/仓库名.git
+3. git add .
+   git commit -m "修改信息"
+   git push [远程仓库的名字(origin)] [远程仓库的分支名(master/main)]
+   git status
+4. git pull (同push) 其实可以什么都不加  =  从github下载最新源码

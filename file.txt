@@ -1,6 +1,0 @@
-git
-HELLO
-git is a version control system
-FUCKU
-include
-io
