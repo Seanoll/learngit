@@ -59,7 +59,7 @@ Hello World!
 在导言区：
 - \title{title}
 - \arthor{arthor}
-- \date{date}
+- \date{date}  
 在正文区可以用\maketitle写一个标题
 ## 环境
 - 成对出现的命令，用于控制一段内容的格式
