@@ -1,0 +1,4 @@
+1.登录服务器，给服务器安装好Shadowsocks（使用teddysun脚本），检查/etc/shadowsocks-libev/config.json的配置文件中
+  server必须为0.0.0.0，server_port必须为服务器端口，password
+2.下载客户端，填写服务器地址、端口、密码、加密方式
+3.在右下角栏选择系统代理-PAC模式
