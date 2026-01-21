@@ -1,4 +1,17 @@
-1.登录服务器，给服务器安装好Shadowsocks（使用teddysun脚本），检查/etc/shadowsocks-libev/config.json的配置文件中
-  server必须为0.0.0.0，server_port必须为服务器端口，password
+1.登录服务器，给服务器安装好Shadowsocks（使用teddysun脚本），
+  https://teddysun.com/358.html
+  即以下步骤：
+  （1）wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev-debian.sh
+  （2）chmod +x shadowsocks-libev-debian.sh
+  （3）./shadowsocks-libev-debian.sh 2>&1 | tee shadowsocks-libev-debian.log
+  （4）设置密码、端口、加密方式
+  如果需要卸载：./shadowsocks-libev-debian.sh uninstall（注意：需要cd ~才能执行）
+  
+  检查/etc/shadowsocks-libev/config.json的配置文件中
+  server必须为0.0.0.0，server_port必须为服务器端口，password和加密方式是否正确
+
+  启动服务：systemctl start shadowsocks
+  查看服务状态：systemctl status shadowsocks
+  
 2.下载客户端，填写服务器地址、端口、密码、加密方式
-3.在右下角栏选择系统代理-PAC模式
+3.在右下角栏选择系统代理-PAC模式，即可使用
